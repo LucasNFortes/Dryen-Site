@@ -26,6 +26,7 @@ a {
 p {
   text-align: justify;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 html {
@@ -63,7 +64,7 @@ header {
   background-color: #007f78ff;
   transition: background-color 0.3s ease-in-out;
   height: 50px;
-  border-bottom: 1px solid #ffffff7f;
+  border-bottom: 3px solid #ffffff7f;
   font-weight: bold;
 }
 
@@ -135,7 +136,7 @@ footer .site-info {
   flex-wrap: wrap;
   margin: 0 auto;
   justify-content: center;
-  align-content:first baseline;
+  align-content: first baseline;
   background: white;
   background-image: url(./img/header-bg.png);
   background-size: 100%;
@@ -143,7 +144,8 @@ footer .site-info {
   max-width: 30%;
 }
 
-.resume img, h4,
+.resume img,
+h4,
 h6 {
   text-align: center;
   margin: 0;
@@ -157,10 +159,11 @@ h6 {
 .resume td {
   border-bottom: 1px solid #54595f;
 }
+
 .resume table {
   margin: 30px;
   height: 30%;
-  font-size:medium;
+  font-size: medium;
 }
 
 .myself {
@@ -219,7 +222,7 @@ button:hover:active {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  align-items:start;
+  align-items: start;
   margin-right: 10px;
   align-content: start;
 }
@@ -250,18 +253,16 @@ button:hover:active {
 }
 
 #education h3 {
-  box-sizing: border-box;
-  text-align: left;  
   margin: 0;
   align-self: center;
   padding-left: 30px;
-  line-height: 100%;
 }
 
 .title {
   display: flex;
   background: #223d4d;
   color: white;
+  text-transform: uppercase;
 }
 
 #education .text {
@@ -277,6 +278,7 @@ button:hover:active {
   width: 90%;
   flex-direction: row;
   background: #f8f8f8;
+  padding-top: 50px;
 }
 
 #professional-skills>div {
@@ -285,6 +287,10 @@ button:hover:active {
 
 #professional-skills .title {
   justify-content: center;
+}
+
+#professional-skills h3 {
+  margin-left: 30px;
 }
 
 #professional-skills .percent {
@@ -308,6 +314,151 @@ button:hover:active {
   background-color: #007f78ff;
 }
 
-#professional-skills .progress-bar .level {
+#professional-skills .level {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 30px;
+}
 
+.level p {
+  display: inline-block;
+  justify-content: space-between;
+}
+
+#references {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 90%;
+  flex-direction: row;
+  background: #f8f8f8;
+  padding-top: 50px;
+}
+
+#references>div {
+  flex: 1 1;
+}
+
+#references h3 {
+  margin: 0;
+  align-self: center;
+  padding-left: 30px;
+}
+
+#references .title {
+  justify-content: center;
+}
+
+.recommend {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.recommend>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1;
+  margin: 30px;
+}
+
+#additional {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.additional {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 90%;
+  flex-direction: row;
+  padding-top: 50px;
+}
+
+.additional>div {
+  flex: 1 1;
+}
+
+#additional li {
+  margin-top: 30px;
+}
+
+#additional .title {
+  justify-content: center;
+}
+
+#additional h3 {
+  margin: 0;
+  align-self: center;
+  padding-left: 30px;
+}
+
+#contact {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 90%;
+  background: #f8f8f8;
+  padding-top: 50px;
+  border-top: 30px solid #223d4d;
+}
+
+#contact>div {
+  flex: 1 1;
+}
+
+.form {
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.nome,
+.email,
+.mensagem {
+  background-color: #f6f6f6;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: #333;
+  height: 50px;
+  text-align: left;
+  font-size: 20px;
+  width: 90%;
+}
+
+.campos {
+  width: 100%;
+  background-color: white;
+  padding: 30px;
+}
+
+.form .mensagem {
+  resize: vertical;
+  min-height: 100px;
+  max-height: 200px;
+}
+
+.campos input,
+.campos textarea {
+  display: block;
+}
+
+.email-phone {
+  display: block;
+}
+
+.email-phone>div {
+  flex: 1 1;
+  padding: 25px;
+  background-color: white;
+}
+
+.email-phone div {
+  margin: 50px;
 }
