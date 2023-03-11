@@ -48,19 +48,31 @@ class Formulario extends React.Component {
 
   render() {
     return (
-      <div id="my-form">
-        <div className="form">
-          <h6>MENSAGEM DIRETA</h6>
-          <h1>Mande uma mensagem</h1>
-          <form onSubmit={this.handleSubmit}>
-            <input className="nome" name="nome" placeholder="Nome" value={this.state.nome} onChange={this.handleChange} />
-            <br />
-            <input className="email" name="email" placeholder="Email" value={this.state.email} onChange={this.handleChange} />
-            <br />
-            <input className="mensagem" name="mensagem" placeholder="Mensagem" value={this.state.mensagem} onChange={this.handleChange} />
-            <br />
-            <button id="send-msg" type="submit">Enviar</button>
-          </form>
+      <div>
+        <header> {/* Adiciona o elemento header aqui */}
+          <nav className="primary-navigation">
+            <ul>
+              <li><a href="#about">Sobre</a></li>
+              <li><a href="#services">Serviços</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#contact">Contato</a></li>
+            </ul>
+          </nav>
+        </header>
+        <div id="my-form">
+          <div className="form">
+            <h6>MENSAGEM DIRETA</h6>
+            <h1>Mande uma mensagem</h1>
+            <form onSubmit={this.handleSubmit}>
+              <input className="nome" name="nome" placeholder="Nome" value={this.state.nome} onChange={this.handleChange} />
+              <br />
+              <input className="email" name="email" placeholder="Email" value={this.state.email} onChange={this.handleChange} />
+              <br />
+              <input className="mensagem" name="mensagem" placeholder="Mensagem" value={this.state.mensagem} onChange={this.handleChange} />
+              <br />
+              <button id="send-msg" type="submit">Enviar</button>
+            </form>
+          </div>
         </div>
       </div>
     );
