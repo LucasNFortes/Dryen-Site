@@ -1,0 +1,313 @@
+html,
+body,
+ul,
+li,
+p {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size: 1.2rem;
+  font-family: Verdana, Helvetica, sans-serif;
+}
+
+h6,
+td,
+p,
+a,
+li {
+  color: #54595f;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding:
+    var(--scroll-padding, 5rem);
+}
+
+body {
+  margin-top: 150px;
+  background-image: url(./img/header-bg.png);
+  background-size: 100%;
+  background-color: #f3f3f3;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  justify-content: center;
+  width: 98%;
+  max-width: 3000px;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding: 20px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #007f78ff;
+  transition: background-color 0.3s ease-in-out;
+  height: 50px;
+  border-bottom: 1px solid #ffffff7f;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  margin-right: 5svw;
+  text-transform: uppercase;
+}
+
+.menu li {
+  margin-left: 10px;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px;
+  color: black;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 100px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.logo {
+  max-width: 80px;
+}
+
+footer {
+  z-index: 20;
+  width: 100%;
+  display: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 60px;
+  bottom: 0;
+  border-top: 3px solid #000000a7;
+  background-image: url(./img/footer-bg.png);
+}
+
+footer .site-info {
+  font-size: 15px;
+  display: inline-block;
+}
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  flex-direction: row;
+  max-width: 90%;
+  background: #f8f8f8;
+  justify-content: center;
+}
+
+.home>div {
+  flex: 1 1;
+  margin: 30px;
+}
+
+.resume {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  align-content:first baseline;
+  background: white;
+  background-image: url(./img/header-bg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  max-width: 30%;
+}
+
+.resume img, h4,
+h6 {
+  text-align: center;
+  margin: 0;
+}
+
+.resume img {
+  border-radius: 50%;
+  border: 10px solid white;
+}
+
+.resume td {
+  border-bottom: 1px solid #54595f;
+}
+.resume table {
+  margin: 30px;
+  height: 30%;
+  font-size:medium;
+}
+
+.myself {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  margin: 30px;
+  width: 200px;
+  height: 50px;
+  background: linear-gradient(to bottom, #007f78ff 0%, #007f78ff 50%, #ffba8bff 50%, #ffba8bff 100%);
+  background-position: 0 0;
+  background-size: 100% 200%;
+  color: #fff;
+  transition: background-position 0.5s;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-position: 0 -100%;
+  transition: background-position 0.5s ease-out;
+}
+
+button:hover:active {
+  background-position: 0 -200%;
+  transition: background-position 0s;
+}
+
+#education {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 90%;
+  flex-direction: row;
+  background: #f8f8f8;
+}
+
+#education>div {
+  flex: 1 1;
+}
+
+.work-xp {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  align-items:start;
+  margin-right: 10px;
+  align-content: start;
+}
+
+.work-xp>div {
+  flex: 1 1 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.education {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-left: 10px;
+  align-content: start;
+}
+
+.education>div {
+  flex: 1 1 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#education h4 {
+  text-align: left;
+  padding-top: 30px;
+}
+
+#education h3 {
+  box-sizing: border-box;
+  text-align: left;  
+  margin: 0;
+  align-self: center;
+  padding-left: 30px;
+  line-height: 100%;
+}
+
+.title {
+  display: flex;
+  background: #223d4d;
+  color: white;
+}
+
+#education .text {
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+  align-content: stretch;
+}
+
+#professional-skills {
+  margin: 0 auto;
+  max-width: 90%;
+  width: 90%;
+  flex-direction: row;
+  background: #f8f8f8;
+}
+
+#professional-skills>div {
+  flex: 1 1;
+}
+
+#professional-skills .title {
+  justify-content: center;
+}
+
+#professional-skills .percent {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+#professional-skills .percent>div {
+  flex: 1 1;
+  margin: 30px;
+}
+
+#professional-skills .progress-bar {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#professional-skills .progress-bar .progress {
+  height: 10px;
+  background-color: #007f78ff;
+}
+
+#professional-skills .progress-bar .level {
+
+}
