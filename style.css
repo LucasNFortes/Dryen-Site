@@ -43,16 +43,30 @@ body {
   background-position-x: center;
   background-repeat: no-repeat;
   justify-content: center;
-  width: 98%;
-  max-width: 3000px;
+  width: 100%;
+  max-width: 2800px;
   margin: 0 auto;
   margin-top: 200px;
 }
 
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+/*-----------------------Header---------------------*/
 header {
   position: fixed;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-content: center;
   align-items: center;
@@ -82,6 +96,51 @@ header {
   padding: 10px;
   color: black;
 }
+
+#menu-toggle {
+  display: none;
+}
+
+@media screen and (max-width: 1080px) {
+  .menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  #menu-toggle {
+    display: block;
+    position: absolute;
+    top: 15;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+  }
+  .menu.show {
+    display: block;
+    right: 0;
+    right: 0;
+    background: #007f78d5;
+  }
+  .menu.show a {
+    color: white;
+  }
+  .menu.show li {
+    display: block;
+  }
+}
+
+/*-------------------------------------------------*/
+
 
 h1 {
   text-align: center;
@@ -141,6 +200,13 @@ footer .site-info {
   background-size: 100%;
   background-repeat: no-repeat;
   max-width: 30%;
+}
+
+@media screen and (max-width: 1500px) {
+  #home .resume {
+    max-width: 100%;
+    padding-bottom: 50px;
+  }
 }
 
 .resume img,
@@ -306,11 +372,20 @@ button:hover:active {
 #professional-skills .progress-bar {
   width: 100%;
   background-color: #ddd;
+  border-radius: 5px;
 }
 
 #professional-skills .progress-bar .progress {
   height: 10px;
+  border-radius: 5px;
+}
+
+.percent1 .progress {
   background-color: #007f78ff;
+}
+
+.percent2 .progress {
+  background-color: #ffba8bff;
 }
 
 #professional-skills .level {
@@ -412,7 +487,8 @@ button:hover:active {
 }
 
 .form {
-  margin: 0 auto;
+  margin: 30px;
+  background-color: white;
   padding: 50px;
 }
 
@@ -433,7 +509,6 @@ button:hover:active {
 
 .campos {
   width: 100%;
-  background-color: white;
   padding: 30px;
 }
 
