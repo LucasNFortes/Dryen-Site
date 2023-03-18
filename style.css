@@ -29,10 +29,11 @@ p {
   margin-top: 20px;
 }
 
-html {
+#education {
+  overflow-y: auto;
   scroll-behavior: smooth;
   scroll-padding:
-    var(--scroll-padding, 5rem);
+    var(--scroll-padding, 5rem);/*editar conforme necessidade*/
 }
 
 body {
